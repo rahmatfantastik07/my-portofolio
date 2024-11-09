@@ -1,0 +1,203 @@
+:root {
+  --bg: #292561;
+  --bg2: #292919;
+  --bg3: #b74c00;
+  --bg4: #e79a00;
+  --ungu: #820075;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 400vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  z-index: 9999;
+}
+
+.navbar:hover {
+  background: var(--bg3);
+}
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px;
+  position: relative;
+  padding: 3px 0px;
+}
+
+.navbar ul li:hover {
+  color: greenyellow;
+  background: var(--ungu);
+  border-radius: 15px;
+  padding: 3px 10px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: white;
+}
+
+.navbar ul li a::after {
+  content: "";
+  width: 0;
+  top: 25px;
+  left: 0;
+  position: absolute;
+  height: 3px;
+  background: greenyellow;
+  transition: 0.9s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.navbar .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar span {
+  color: greenyellow;
+}
+
+section {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+#about,
+#skils,
+#contact {
+  padding: 5rem;
+}
+
+#home {
+  background-image: url("img/NIKON\ D3100001.JPG");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: -5rem;
+}
+#about {
+  background: var(--bg);
+  height: 100vh;
+}
+#skils {
+  background: var(--bg3);
+  height: 100vh;
+}
+#contact {
+  background: var(--bg4);
+  height: 100vh;
+}
+.footer {
+  background: var(--bg2);
+  height: 20vh;
+  text-align: center;
+  padding-top: 5%;
+  color: aqua;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 10px;
+  bottom: -10px;
+}
+
+.box1 img {
+  width: 15rem;
+  height: auto;
+  position: relative;
+  border-radius: 15%;
+  /* opacity: 60%; */
+  right: 55rem;
+}
+
+.image1 {
+  z-index: 90;
+  top: -35rem;
+  position: relative;
+  padding: -10rem;
+}
+
+span h1 {
+  margin: 3rem;
+  z-index: -1;
+  font-size: 12rem;
+  color: #e79a00;
+  text-shadow: var(--shadow);
+}
+
+#home .garis1 {
+  z-index: 98;
+  border: 15px solid rgb(247, 158, 4);
+  width: 55rem;
+  border-radius: 15px;
+  display: inline-block;
+  right: 0;
+  position: relative;
+  top: -35rem;
+}
+
+.p1 {
+  top: -33rem;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: aqua;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.p1:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
+
+.p1::after {
+  content: "";
+  width: 0;
+  top: 8rem;
+  left: 0;
+  position: absolute;
+  height: 5px;
+  background: greenyellow;
+  transition: 0.9s;
+}
+
+.p1:hover::after {
+  width: 100%;
+  border-radius: 1rem;
+  align-items: center;
+}
