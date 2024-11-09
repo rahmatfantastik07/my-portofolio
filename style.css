@@ -48,8 +48,6 @@ body {
 
 .navbar ul li:hover {
   color: greenyellow;
-  background: var(--ungu);
-  border-radius: 15px;
   padding: 3px 10px;
 }
 
@@ -67,7 +65,7 @@ body {
   content: "";
   width: 0;
   top: 25px;
-  left: 0;
+  left: 0.5rem;
   position: absolute;
   height: 3px;
   background: greenyellow;
@@ -75,129 +73,368 @@ body {
 }
 
 .navbar ul li a:hover::after {
-  width: 100%;
+  width: 80%;
   border-radius: 15px;
 }
 
-.navbar .logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: black;
+.navbar .logo1 {
+  height: 3rem;
 }
 
 .navbar span {
-  color: greenyellow;
+  color: #0beacc;
 }
 
-section {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 1rem;
-}
 #about,
 #skils,
 #contact {
   padding: 5rem;
 }
-
 #home {
-  background-image: url("img/NIKON\ D3100001.JPG");
-  background-position: center;
+  position: relative;
+  background-image: url(img/NIKON\ D3100001.JPG);
   background-size: cover;
-  height: 100vh;
-  padding: -5rem;
-}
-#about {
-  background: var(--bg);
-  height: 100vh;
-}
-#skils {
-  background: var(--bg3);
-  height: 100vh;
-}
-#contact {
-  background: var(--bg4);
-  height: 100vh;
-}
-.footer {
-  background: var(--bg2);
-  height: 20vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
   text-align: center;
-  padding-top: 5%;
-  color: aqua;
-  font-size: 20px;
+  color: white;
+  min-height: 100vh; /* Full height untuk home section */
+  top: 0;
 }
 
-footer p {
-  margin: 10px;
-  bottom: -10px;
-}
-
-.box1 img {
-  width: 15rem;
-  height: auto;
-  position: relative;
-  border-radius: 15%;
-  /* opacity: 60%; */
-  right: 55rem;
-}
-
-.image1 {
-  z-index: 90;
-  top: -35rem;
-  position: relative;
-  padding: -10rem;
-}
-
-span h1 {
-  margin: 3rem;
-  z-index: -1;
-  font-size: 12rem;
-  color: #e79a00;
-  text-shadow: var(--shadow);
-}
-
-#home .garis1 {
-  z-index: 98;
-  border: 15px solid rgb(247, 158, 4);
-  width: 55rem;
-  border-radius: 15px;
-  display: inline-block;
-  right: 0;
-  position: relative;
-  top: -35rem;
-}
-
-.p1 {
-  top: -33rem;
-  position: relative;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: aqua;
-  padding: 0 3rem;
-  width: 100%;
-}
-
-.p1:hover {
-  color: greenyellow;
-  cursor: pointer;
-}
-
-.p1::after {
+.home::after {
   content: "";
   width: 0;
-  top: 8rem;
+  bottom: 0;
   left: 0;
   position: absolute;
-  height: 5px;
+  height: 0.5rem;
   background: greenyellow;
   transition: 0.9s;
+  z-index: 3;
 }
 
-.p1:hover::after {
+.home:hover::after {
   width: 100%;
-  border-radius: 1rem;
-  align-items: center;
+  border-radius: 5px;
+}
+
+.h3h {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.h3sh {
+  font-size: 5rem;
+  color: #ff4500;
+}
+
+.home h3 {
+  font-size: 36px;
+  margin-top: -3rem;
+}
+
+.h1 {
+  font-size: 15rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.h1span {
+  color: #ff4500;
+  font-size: 15rem;
+}
+
+.konten {
+  font-size: 1.2rem;
+  display: flex;
+  left: 6rem;
+  position: relative;
+  margin: 0 10rem 0 15rem;
+}
+
+/* Style gambar */
+.gambar1,
+.gambar2 {
+  position: absolute;
+}
+
+.gambar1 {
+  top: 71%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  z-index: 1;
+  height: 35rem;
+  overflow: hidden;
+}
+
+.gambar2 {
+  top: 76%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 30rem;
+}
+
+.about {
+  height: 100vh;
+  background-color: #e79a00;
+}
+
+.about .h3 {
+  font-size: 5rem;
+  text-align: center;
+  color: #820075;
+}
+
+.about .h3a {
+  font-size: 2rem;
+  color: black;
+}
+
+.skils {
+  background-color: #820075;
+  height: 100vh;
+}
+
+.skils .h3s {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.skils .h3sp {
+  font-size: 5rem;
+  color: #ff4500;
+}
+
+.contact {
+  background-color: blueviolet;
+  height: 100vh;
+}
+
+.h3k {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.h3spk {
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+/* Media Query untuk ukuran laptop ke tablet */
+@media (max-width: 1075px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .all {
+    font-size: 80%;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+
+  .navbar .logo1 {
+    height: 2.5rem;
+  }
+
+  #home {
+    padding: 80px 10px; /* Mengurangi padding untuk tampilan lebih baik */
+  }
+
+  .home h3 {
+    font-size: 28px; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .h1 {
+    font-size: 10rem; /* Mengurangi ukuran font untuk responsif */
+    margin-bottom: 15px;
+    margin-top: 3rem;
+  }
+
+  .h1span {
+    font-size: 10rem; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .konten {
+    font-size: 1rem; /* Mengurangi ukuran font untuk responsif */
+    left: -1rem; /* Menyesuaikan posisi */
+    margin: 0 4rem; /* Menyesuaikan margin */
+    top: 0;
+  }
+
+  .gambar1 {
+    height: 25rem; /* Menyesuaikan ukuran gambar */
+    top: 23rem;
+  }
+  .gambar2 {
+    height: 25rem; /* Menyesuaikan ukuran gambar */
+    top: 25rem;
+  }
+}
+
+/* Media Query untuk ukuran laptop ke tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+
+  .navbar .logo1 {
+    height: 2.5rem;
+  }
+
+  #home {
+    padding: 80px 10px; /* Mengurangi padding untuk tampilan lebih baik */
+  }
+
+  .home h3 {
+    font-size: 28px; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .h1 {
+    font-size: 10rem; /* Mengurangi ukuran font untuk responsif */
+    margin-bottom: 15px;
+  }
+
+  .h1span {
+    font-size: 10rem; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .konten {
+    font-size: 1rem; /* Mengurangi ukuran font untuk responsif */
+    left: 5rem; /* Menyesuaikan posisi */
+    margin: 0 5rem; /* Menyesuaikan margin */
+  }
+
+  .gambar1,
+  .gambar2 {
+    height: 25rem; /* Menyesuaikan ukuran gambar */
+  }
+}
+
+/* Media Query untuk ukuran tablet ke ponsel */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Mengubah arah menjadi kolom */
+    padding: 10px 5%;
+  }
+
+  .navbar ul li {
+    margin: 5px 0; /* Mengubah margin untuk vertikal */
+  }
+
+  .navbar .logo1 {
+    height: 2rem; /* Mengurangi ukuran logo */
+  }
+
+  #home {
+    padding: 50px 5px; /* Mengurangi padding untuk tampilan lebih baik */
+  }
+
+  .home h3 {
+    font-size: 24px; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .h1 {
+    font-size: 8rem; /* Mengurangi ukuran font untuk responsif */
+    margin-bottom: 10px;
+    margin-top: 7rem;
+    margin-left: 3rem;
+  }
+
+  .h1span {
+    font-size: 8rem; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .konten {
+    font-size: 0.9rem; /* Mengurangi ukuran font untuk responsif */
+    left: 0; /* Menyesuaikan posisi */
+    margin: 0 8px; /* Menyesuaikan margin */
+    top: 0.5rem;
+  }
+
+  .gambar1 {
+    height: 20rem; /* Menyesuaikan ukuran gambar */
+    top: 22rem;
+  }
+
+  .gambar2 {
+    height: 18rem; /* Menyesuaikan ukuran gambar */
+    top: 24rem;
+  }
+}
+
+/* Media Query untuk ukuran ponsel kecil */
+@media (max-width: 480px) {
+  body {
+    height: 30vh;
+  }
+
+  .all {
+    font-size: 40%;
+  }
+  .navbar {
+    padding: 10px 2%; /* Mengurangi padding navbar */
+  }
+
+  .navbar ul li {
+    margin: 3px 0; /* Mengurangi margin untuk vertikal */
+  }
+
+  .navbar .logo1 {
+    height: 1.5rem; /* Mengurangi ukuran logo */
+  }
+
+  #home {
+    padding: 30px 5px; /* Mengurangi padding untuk tampilan lebih baik */
+  }
+
+  .home h3 {
+    font-size: 20px; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .h1 {
+    margin-top: 7rem;
+    margin-left: 4rem;
+    font-size: 5rem; /* Mengurangi ukuran font untuk responsif */
+    margin-bottom: 8px;
+  }
+
+  .h1span {
+    font-size: 5rem; /* Mengurangi ukuran font untuk responsif */
+  }
+
+  .konten {
+    font-size: 0.8rem; /* Mengurangi ukuran font untuk responsif */
+    left: 0; /* Menyesuaikan posisi */
+    margin: 0 1rem; /* Menyesuaikan margin */
+    top: 0.2rem;
+  }
+
+  .gambar1 {
+    top: 20rem;
+    position: absolute;
+  }
+  .gambar2 {
+    top: 22rem;
+    position: absolute;
+  }
+
+  .gambar1 {
+    height: 15rem; /* Menyesuaikan ukuran gambar */
+  }
+  .gambar2 {
+    height: 12rem; /* Menyesuaikan ukuran gambar */
+  }
 }
