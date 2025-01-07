@@ -95,7 +95,7 @@ body {
 }
 
 .btnsend:hover {
-  color: orangered !important;
+  color: white !important;
 }
 
 [tabindex="-1"]:focus {
@@ -11553,7 +11553,7 @@ a {
 }
 
 a:hover {
-  color: white !important;
+  color: orangered !important;
 }
 
 .service-card {
