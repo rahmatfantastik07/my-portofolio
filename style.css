@@ -88,20 +88,22 @@ body {
 }
 
 
-.saya{
+.saya {
   text-align: justify;
   font-weight: bold;
 }
 
 .saya:hover{
-color: navy;
-  font-weight: none;}
+  color: navy;
+  font-weight: none;
+}
   
 .icon1{
   width: 10px;}
 
 .btn1{
-  violet !important;}
+  violet !important;
+}
 
 .btnsend {
   color: black !important;
