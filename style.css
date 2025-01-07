@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 =========================================================
-* Meyawo Landing page
+* Rahmat Landing page
 =========================================================
 
 * Copyright: 2019 DevCRUD (https://devcrud.com)
@@ -95,7 +95,7 @@ body {
 }
 
 .btnsend:hover {
-  color: white !important;
+  color: orangered !important;
 }
 
 [tabindex="-1"]:focus {
