@@ -90,12 +90,12 @@ body {
 
 .saya {
   text-align: justify;
-  font-weight: bold;
 }
 
 .saya:hover{
   color: navy;
   font-weight: 100;
+  
 }
   
 .icon1{
