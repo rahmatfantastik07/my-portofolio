@@ -12463,14 +12463,16 @@ pre .code {
 }
 
 .footer .social-links a {
-  padding: 0px 11px 10px;
-  height: 40px;
+  padding: 0px 1px 40px 0px;
+  height: 35px;
   width: 40px;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
   border: 2px solid #6c757d;
   color: #6c757d;
+  bottom: 0;
+  position: relative;
 }
 
 .footer .social-links a:hover {
