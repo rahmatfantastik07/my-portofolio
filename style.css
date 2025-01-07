@@ -12463,7 +12463,7 @@ pre .code {
 }
 
 .footer .social-links a {
-  padding: 0;
+  padding: 0px 11px 10px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
